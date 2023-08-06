@@ -3,7 +3,7 @@ This repository contains the code and instructions for an introductory project o
 
 # Project Structure
 
-📂 Dockerized-ClientServer-Containers --
+📂 Dockerized-ClientServer-Containers __
 |
 |-- 📂 client\n
 |   |-- 📄 client.py\n
