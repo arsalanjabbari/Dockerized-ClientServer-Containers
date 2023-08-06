@@ -1,0 +1,49 @@
+version: "3"
+
+services:
+  server:
+    # Build the server container using the specified Dockerfile
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    # Mount the server volume and expose ports
+    volumes:
+      - servervol:/serverdata
+    ports:
+      - "8000:8000"
+    # Connect to the specified network and define dependencies
+    networks:
+      - mynetwork
+    depends_on:
+      - mongo  # Server depends on the mongo service
+
+  client:
+    # Build the client container using the specified Dockerfile
+    build:
+      context: .
+      dockerfile: client/Dockerfile
+    # Mount the client volume
+    volumes:
+      - clientvol:/clientdata
+    # Connect to the specified network and define dependencies
+    networks:
+      - mynetwork
+    depends_on:
+      - server  # Client depends on the server service
+
+  mongo:
+    image: mongo:latest  # Use the latest MongoDB image from Docker Hub
+    ports:
+      - '27017:27017'  # Map host port to container port
+    networks:
+      - mynetwork
+    volumes:
+      - mongodb:/data/db  # Mount volume for MongoDB data storage
+
+volumes:
+  servervol:  # Define named volume for server data
+  clientvol:  # Define named volume for client data
+  mongodb:  # Define named volume for MongoDB data storage
+
+networks:
+  mynetwork:  # Define user-defined network for service communication
