@@ -1,5 +1,16 @@
 # Dockerized Client-Server Containers
 
+This repository contains the code and instructions for an introductory project on Dockerization. Explore the world of containerization as you build and depoly simple client and server containers using Docker. Follow along with the provided guide to get started and learn how to dockerize applications effectively.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Conclusion](#conclusion)
+
+## Introduction
+
 Welcome to the Dockerized Client-Server Containers project repository! This repository is designed to provide you with the necessary code and instructions to explore the world of Docker containerization. In this project, you'll learn how to build and deploy simple client and server containers using Docker, enabling you to effectively manage and distribute applications within isolated environments.
 
 ## Project Overview
@@ -31,6 +42,15 @@ The `docker-compose.yml` file defines the services, networks, and volumes for th
 - `fileclient.sh`: A shell script that provides functionality to interact with the client container, including copying files into the container.
 - `fileserver.sh`: A shell script that provides functionality to interact with the server container, including copying files into the container.
 - `open-client-shell.sh`: A shell script to open a shell within the client container for manual interaction and testing.
+
+## Features
+
+- **Client-Server Interaction:** Experience a client-server architecture where the client interacts with the server through REST APIs.
+- **Docker Containerization:** Learn how to containerize applications using Docker, enabling easy deployment and isolation.
+- **File Transfer:** Explore file transfer between the client and server containers, including checksum verification.
+- **REST API:** Use a simple REST API to insert, retrieve, and delete person records from the server.
+- **Data Persistence:** Store person records in a MongoDB container for data persistence.
+- **Automated Scripts:** Convenient shell scripts provided for common tasks like copying files and opening a client shell.
 
 ## Getting Started
 
