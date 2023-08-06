@@ -1,5 +1,6 @@
 # Dockerized-ClientServer-Containers
-This repository contains the code and instructions for an introductory project on Dockerization. Explore the world of containerization as you build and deploy simple client and server containers using Docker. Follow along with the provided guide to get started and learn how to dockerize applications effectively.
+This repository contains the code and instructions for an introductory project on Dockerization. Explore the world o
+f containerization as you build and deploy simple client and server containers using Docker. Follow along with the provided guide to get started and learn how to dockerize applications effectively.
 
 # Project Structure
 
