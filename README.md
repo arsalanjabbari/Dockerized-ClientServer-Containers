@@ -3,8 +3,8 @@ This repository contains the code and instructions for an introductory project o
 
 # Project Structure
 
-📂 Dockerized-ClientServer-Containers\n
-|\n
+📂 Dockerized-ClientServer-Containers --
+|
 |-- 📂 client\n
 |   |-- 📄 client.py\n
 |   |-- 📄 Dockerfile\n
